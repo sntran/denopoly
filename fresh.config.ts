@@ -1,7 +1,8 @@
 import { defineConfig } from "$fresh/server.ts";
-import twindPlugin from "$fresh/plugins/twind.ts";
-import twindConfig from "./twind.config.ts";
+import tailwindPlugin from "https://deno.land/x/fresh_tailwind@v0.5.3/mod.ts";
 
 export default defineConfig({
-  plugins: [twindPlugin(twindConfig)],
+  plugins: [
+    tailwindPlugin(),
+  ],
 });
